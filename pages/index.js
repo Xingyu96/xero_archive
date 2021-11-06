@@ -1,7 +1,8 @@
-  import Head from 'next/head'
+import Head from 'next/head'
 import Image from 'next/image'
 import ArchiveHeader from '../components/ArchiveHeader.js'
 import styles from '../styles/Home.module.css'
+import logo from '../public/logo/logo_200_200.png'
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
         <h1 className={styles.title}>
           Xero Archive
         </h1>
+
+        <Image rounded src={logo} alt='logo'/>
 
 
       </main>

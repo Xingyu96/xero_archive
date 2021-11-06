@@ -4,3 +4,4 @@ This is the second version of my personal website, based on React.
 ## Features
 - Blog
 - Web project showcase
+- Served by Amazon Amplify

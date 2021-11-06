@@ -3,17 +3,19 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Navbar';
+import logo from '../public/logo/logo_200_200.png';
 
-export default function
-() {
+export default function ArchiveHeader() {
+  console.log(logo);
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar collapseOnSelect expand="lg" bg="light" fixed="top">
+    <Image rounded src={logo} alt='logo'/>
   <Container>
-    <Image rounded src='https://react.semantic-ui.com/images/avatar/large/patrick.png' />
+
     <Navbar.Brand href="#home">Xero-Archive</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
+      <Nav className="me-auto" displayName="hello">
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#link">Link</Nav.Link>
         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
